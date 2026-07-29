@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs() {
   return (
-    <section className="about-us">
+    <div className="about-us-container">
       <h2>About Paradise Nursery</h2>
       <p>
         Paradise Nursery was founded with a simple idea: everyone deserves a
@@ -21,7 +21,7 @@ function AboutUs() {
         schedules, Paradise Nursery is here to help you grow your own
         indoor paradise.
       </p>
-    </section>
+    </div>
   );
 }
 
