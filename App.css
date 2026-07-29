@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Landing Page ---------- */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(9, 40, 22, 0.55), rgba(9, 40, 22, 0.65)),
+    url('https://images.unsplash.com/photo-1466692476868-9ee5a3a3e93b?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.landing-content {
+  max-width: 700px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.landing-content h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #d8f3dc;
+}
+
+.landing-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  color: #f1f8f1;
+}
+
+.get-started-btn {
+  background-color: #40916c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #2d6a4f;
+  transform: translateY(-2px);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b4332;
+  padding: 14px 30px;
+  color: #ffffff;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbar .nav-links li:hover {
+  text-decoration: underline;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-count {
+  background-color: #d00000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+}
+
+/* ---------- Product List ---------- */
+.product-list-page {
+  padding: 20px 30px;
+}
+
+.category-title {
+  font-size: 1.6rem;
+  margin: 24px 0 12px;
+  color: #1b4332;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.plant-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.plant-card h4 {
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.plant-card p {
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 600;
+}
+
+.plant-card button {
+  background-color: #40916c;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.plant-card button:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+/* ---------- Cart Page ---------- */
+.cart-page {
+  padding: 20px 30px;
+}
+
+.cart-total {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #1b4332;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 16px 0;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #d00000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cart-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.cart-actions button {
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.continue-shopping-btn {
+  background-color: #52796f;
+  color: #fff;
+}
+
+.checkout-btn {
+  background-color: #40916c;
+  color: #fff;
+}
+
+/* ---------- About Us ---------- */
+.about-us {
+  padding: 40px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #1b4332;
+  margin-bottom: 16px;
+}
+
+.about-us p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 12px;
+}
